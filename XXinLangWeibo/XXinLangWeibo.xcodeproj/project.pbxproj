@@ -33,47 +33,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA3C9BDF1E841C440023ADE5 /* Classes */ = {
+		BE56479B1E88BDE80089284C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AA3C9BE21E841C440023ADE5 /* Main */,
-				AA3C9BE11E841C440023ADE5 /* Home */,
-				AA3C9BE31E841C440023ADE5 /* Message */,
-				AA3C9BE01E841C440023ADE5 /* Discover */,
-				AA3C9BE41E841C440023ADE5 /* Profile */,
+				BE56479C1E88BDE80089284C /* Discover */,
+				BE56479D1E88BDE80089284C /* Home */,
+				BE56479E1E88BDE80089284C /* Main */,
+				BE56479F1E88BDE80089284C /* Message */,
+				BE5647A01E88BDE80089284C /* Profile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		AA3C9BE01E841C440023ADE5 /* Discover */ = {
+		BE56479C1E88BDE80089284C /* Discover */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		AA3C9BE11E841C440023ADE5 /* Home */ = {
+		BE56479D1E88BDE80089284C /* Home */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		AA3C9BE21E841C440023ADE5 /* Main */ = {
+		BE56479E1E88BDE80089284C /* Main */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		AA3C9BE31E841C440023ADE5 /* Message */ = {
+		BE56479F1E88BDE80089284C /* Message */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Message;
 			sourceTree = "<group>";
 		};
-		AA3C9BE41E841C440023ADE5 /* Profile */ = {
+		BE5647A01E88BDE80089284C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -99,7 +99,7 @@
 		BE7DE3F71E83F82D00262B6C /* XXinLangWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				AA3C9BDF1E841C440023ADE5 /* Classes */,
+				BE56479B1E88BDE80089284C /* Classes */,
 				BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */,
 				BE7DE3FC1E83F82D00262B6C /* Main.storyboard */,
 				BE7DE3FF1E83F82D00262B6C /* Assets.xcassets */,
