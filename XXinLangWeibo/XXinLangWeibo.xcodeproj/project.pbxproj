@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5647A21E88BE9C0089284C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A11E88BE9C0089284C /* MainVC.swift */; };
+		BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A31E88C21F0089284C /* HomeVC.swift */; };
+		BE5647A61E88C2460089284C /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A51E88C2460089284C /* MessageVC.swift */; };
+		BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A71E88C2560089284C /* DiscoverVC.swift */; };
+		BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A91E88C2790089284C /* ProfileVC.swift */; };
+		BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5647AC1E8909630089284C /* MainVCSettings.json */; };
 		BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */; };
 		BE7DE3FE1E83F82D00262B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FC1E83F82D00262B6C /* Main.storyboard */; };
 		BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FF1E83F82D00262B6C /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE5647A11E88BE9C0089284C /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		BE5647A31E88C21F0089284C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BE5647A51E88C2460089284C /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		BE5647A71E88C2560089284C /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		BE5647A91E88C2790089284C /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		BE5647AC1E8909630089284C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		BE7DE3F51E83F82D00262B6C /* XXinLangWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXinLangWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7DE3FD1E83F82D00262B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,10 +48,10 @@
 		BE56479B1E88BDE80089284C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BE56479C1E88BDE80089284C /* Discover */,
-				BE56479D1E88BDE80089284C /* Home */,
 				BE56479E1E88BDE80089284C /* Main */,
+				BE56479D1E88BDE80089284C /* Home */,
 				BE56479F1E88BDE80089284C /* Message */,
+				BE56479C1E88BDE80089284C /* Discover */,
 				BE5647A01E88BDE80089284C /* Profile */,
 			);
 			path = Classes;
@@ -48,6 +60,7 @@
 		BE56479C1E88BDE80089284C /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				BE5647A71E88C2560089284C /* DiscoverVC.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -55,6 +68,7 @@
 		BE56479D1E88BDE80089284C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BE5647A31E88C21F0089284C /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -62,6 +76,8 @@
 		BE56479E1E88BDE80089284C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BE5647AB1E8909630089284C /* Resource */,
+				BE5647A11E88BE9C0089284C /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -69,6 +85,7 @@
 		BE56479F1E88BDE80089284C /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				BE5647A51E88C2460089284C /* MessageVC.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -76,8 +93,17 @@
 		BE5647A01E88BDE80089284C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				BE5647A91E88C2790089284C /* ProfileVC.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		BE5647AB1E8909630089284C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE5647AC1E8909630089284C /* MainVCSettings.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BE7DE3EC1E83F82D00262B6C = {
@@ -146,7 +172,7 @@
 				};
 			};
 			buildConfigurationList = BE7DE3F01E83F82D00262B6C /* Build configuration list for PBXProject "XXinLangWeibo" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -170,6 +196,7 @@
 			files = (
 				BE7DE4031E83F82D00262B6C /* LaunchScreen.storyboard in Resources */,
 				BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */,
+				BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */,
 				BE7DE3FE1E83F82D00262B6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,7 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */,
+				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,
+				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
+				BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */,
 				BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */,
+				BE5647A21E88BE9C0089284C /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
