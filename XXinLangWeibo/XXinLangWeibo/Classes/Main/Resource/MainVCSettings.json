@@ -1,21 +1,21 @@
 [
  {
-    "vcName": "HomeViewController",
+    "vcName": "HomeVC",
     "title": "首页",
     "imageName": "tabbar_home"
  },
  {
-     "vcName": "MessageViewController",
+     "vcName": "MessageVC",
      "title": "消息",
      "imageName": "tabbar_message_center"
  },
  {
-     "vcName": "DiscoverViewController",
+     "vcName": "DiscoverVC",
      "title": "广场",
      "imageName": "tabbar_discover"
  },
  {
-     "vcName": "ProfileViewController",
+     "vcName": "ProfileVC",
      "title": "我",
      "imageName": "tabbar_profile"
  }

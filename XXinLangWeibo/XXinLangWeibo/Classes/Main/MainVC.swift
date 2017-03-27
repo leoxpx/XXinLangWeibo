@@ -35,6 +35,25 @@ class MainVC: UITabBarController {
         }
         
         // 3.将data转成数组
+        // 如果在调用系统的某一个方法是，该方法最后面有一个throws，说明该方法会抛出异常，如果一个方法会抛出异常，那么需要对该异常进行处理
+        /*
+         在swift中提供三种处理异常的方式
+         方式一：try方式 程序员手动捕捉异常
+         do {
+         try JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers)
+         } catch {
+         print(error)
+         }
+         
+         方式二：try？方式（常用方式） 系统帮助我们处理异常，如果系统出现了异常，这该方法返回nil，如果没有异常，折返回对应的对象
+         guard let any = tyr? JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers) else {
+         return
+         }
+         
+         方式三：try！方式（不建议非常危险） 直接告诉系统，该方法没有异常，注意：如果该方法出现了异常，那么程序会报错（崩溃）
+         let any = tyr！ JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers)
+         */
+        
         guard let anyObject = try? JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers) else {
             return
         }
