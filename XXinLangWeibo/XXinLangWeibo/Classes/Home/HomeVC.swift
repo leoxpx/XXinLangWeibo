@@ -10,6 +10,21 @@ import UIKit
 
 class HomeVC: UITableViewController {
 
+    private lazy var visitorView : UIView = UIView()
+    
+    
+    var isLogin : Bool = false
+    
+    override func loadView() {
+        isLogin ? super.loadView() : setupVisiterView()
+        
+    }
+    
+    func setupVisiterView() {
+        visitorView.backgroundColor = UIColor.red
+        self.view = visitorView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
