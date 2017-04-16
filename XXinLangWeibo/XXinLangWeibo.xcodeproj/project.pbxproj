@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF3F1EA342700019227F /* BaseViewController.swift */; };
+		AAFEEF421EA347240019227F /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF411EA347240019227F /* VisiterView.swift */; };
+		AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFEEF431EA3474C0019227F /* VisiterView.xib */; };
+		AAFEEF461EA39B7D0019227F /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF451EA39B7D0019227F /* UIBarButtonItem-Extension.swift */; };
 		BE01CBDC1E8CE3780055A533 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CBDA1E8CE3780055A533 /* Home.storyboard */; };
 		BE01CBE21E8CE4130055A533 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CBE01E8CE4130055A533 /* Message.storyboard */; };
 		BE01CBE51E8CE4500055A533 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CBE31E8CE4500055A533 /* Discover.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAFEEF3F1EA342700019227F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AAFEEF411EA347240019227F /* VisiterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
+		AAFEEF431EA3474C0019227F /* VisiterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
+		AAFEEF451EA39B7D0019227F /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		BE01CBDB1E8CE3780055A533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		BE01CBE11E8CE4130055A533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
 		BE01CBE41E8CE4500055A533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAFEEF3E1EA342250019227F /* Visiter */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEEF3F1EA342700019227F /* BaseViewController.swift */,
+				AAFEEF411EA347240019227F /* VisiterView.swift */,
+				AAFEEF431EA3474C0019227F /* VisiterView.xib */,
+			);
+			path = Visiter;
+			sourceTree = "<group>";
+		};
 		BE01CBF01E8CF5AE0055A533 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BE01CBF21E8CF6820055A533 /* UIButton-Extension.swift */,
+				AAFEEF451EA39B7D0019227F /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 		BE56479E1E88BDE80089284C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AAFEEF3E1EA342250019227F /* Visiter */,
 				BE5647AB1E8909630089284C /* Resource */,
 				BE5647A11E88BE9C0089284C /* MainVC.swift */,
 			);
@@ -233,6 +253,7 @@
 				BE01CBEF1E8CF5790055A533 /* Profile.storyboard in Resources */,
 				BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */,
 				BE01CBED1E8CE8970055A533 /* News.storyboard in Resources */,
+				AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */,
 				BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */,
 				BE01CBE21E8CE4130055A533 /* Message.storyboard in Resources */,
 				BE01CBE51E8CE4500055A533 /* Discover.storyboard in Resources */,
@@ -247,11 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFEEF461EA39B7D0019227F /* UIBarButtonItem-Extension.swift in Sources */,
 				BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */,
 				BE01CBF31E8CF6820055A533 /* UIButton-Extension.swift in Sources */,
 				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,
 				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
+				AAFEEF421EA347240019227F /* VisiterView.swift in Sources */,
 				BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */,
+				AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */,
 				BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */,
 				BE5647A21E88BE9C0089284C /* MainVC.swift in Sources */,
 			);
