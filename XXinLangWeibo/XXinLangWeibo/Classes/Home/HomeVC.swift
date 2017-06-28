@@ -10,7 +10,12 @@ import UIKit
 
 class HomeVC: BaseViewController {
 
+    // MARK: - 懒加载属性
     
+    lazy var titleBtn : UIButton = TitleButton()
+    
+    
+    // MARK: - 系统回调
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,10 +48,31 @@ extension HomeVC {
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop")
         
         // 3.titleView
+        titleBtn.setTitle("codrewhy", for: .normal)
+        titleBtn.addTarget(self, action: #selector(titleBtClick), for: .touchUpInside)
+        navigationItem.titleView = titleBtn
+    }
+}
+
+// MARK: - 事件监听函数
+extension HomeVC {
+    
+    func titleBtClick(titleBtn : TitleButton) {
+        // 1. 改变按钮状态
+        titleBtn.isSelected = !titleBtn.isSelected
+        
+        // 2. 创建弹出控制器
+        let vc = PopoverVC()
         
         
-        
+        // 3. 弹出控制器
+        present(vc, animated: true, completion: nil)
         
         
     }
+    
+    
+    
 }
+
+

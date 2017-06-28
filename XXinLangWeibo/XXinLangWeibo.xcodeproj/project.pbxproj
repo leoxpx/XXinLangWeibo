@@ -23,6 +23,9 @@
 		BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A71E88C2560089284C /* DiscoverVC.swift */; };
 		BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A91E88C2790089284C /* ProfileVC.swift */; };
 		BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5647AC1E8909630089284C /* MainVCSettings.json */; };
+		BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */; };
+		BE56E8E71F03B55C00D40FC7 /* PopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */; };
+		BE56E8E81F03B55C00D40FC7 /* PopoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */; };
 		BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */; };
 		BE7DE3FE1E83F82D00262B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FC1E83F82D00262B6C /* Main.storyboard */; };
 		BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FF1E83F82D00262B6C /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		BE5647A71E88C2560089284C /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		BE5647A91E88C2790089284C /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		BE5647AC1E8909630089284C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverVC.swift; sourceTree = "<group>"; };
+		BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverVC.xib; sourceTree = "<group>"; };
 		BE7DE3F51E83F82D00262B6C /* XXinLangWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXinLangWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7DE3FD1E83F82D00262B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BE01CBF11E8CF6240055A533 /* Category */,
+				BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		BE56479D1E88BDE80089284C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BE56E8E21F03B50700D40FC7 /* UIPopover */,
 				BE5647A31E88C21F0089284C /* HomeVC.swift */,
 				BE01CBDA1E8CE3780055A533 /* Home.storyboard */,
 			);
@@ -157,6 +165,15 @@
 				BE5647AC1E8909630089284C /* MainVCSettings.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BE56E8E21F03B50700D40FC7 /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */,
+				BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */,
+			);
+			path = UIPopover;
 			sourceTree = "<group>";
 		};
 		BE7DE3EC1E83F82D00262B6C = {
@@ -221,6 +238,7 @@
 				TargetAttributes = {
 					BE7DE3F41E83F82D00262B6C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = L37SXG465L;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -254,6 +272,7 @@
 				BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */,
 				BE01CBED1E8CE8970055A533 /* News.storyboard in Resources */,
 				AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */,
+				BE56E8E81F03B55C00D40FC7 /* PopoverVC.xib in Resources */,
 				BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */,
 				BE01CBE21E8CE4130055A533 /* Message.storyboard in Resources */,
 				BE01CBE51E8CE4500055A533 /* Discover.storyboard in Resources */,
@@ -272,11 +291,13 @@
 				BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */,
 				BE01CBF31E8CF6820055A533 /* UIButton-Extension.swift in Sources */,
 				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,
+				BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */,
 				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
 				AAFEEF421EA347240019227F /* VisiterView.swift in Sources */,
 				BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */,
 				AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */,
 				BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */,
+				BE56E8E71F03B55C00D40FC7 /* PopoverVC.swift in Sources */,
 				BE5647A21E88BE9C0089284C /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L37SXG465L;
 				INFOPLIST_FILE = XXinLangWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = L37SXG465L;
 				INFOPLIST_FILE = XXinLangWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
