@@ -62,11 +62,16 @@ extension HomeVC {
         titleBtn.isSelected = !titleBtn.isSelected
         
         // 2. 创建弹出控制器
-        let vc = PopoverVC()
+        let popoverVc = PopoverVC()
         
+        // 3. 设置控制器model样式
+        popoverVc.modalPresentationStyle = .custom
         
-        // 3. 弹出控制器
-        present(vc, animated: true, completion: nil)
+        // 4. 设置转场代理
+        popoverVc.transitioningDelegate = self
+        
+        // 弹出控制器
+        present(popoverVc, animated: true, completion: nil)
         
         
     }
@@ -75,4 +80,12 @@ extension HomeVC {
     
 }
 
-
+extension HomeVC : UIViewControllerTransitioningDelegate {
+    
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        
+        return XLPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+    
+    
+}

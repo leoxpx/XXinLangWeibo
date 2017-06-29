@@ -22,20 +22,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="301" height="291"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-Dq-vnR">
-                    <rect key="frame" x="20" y="20" width="261" height="251"/>
+                    <rect key="frame" x="15" y="15" width="271" height="261"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cHk-Dq-vnR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="797-b4-mBQ"/>
+                <constraint firstItem="cHk-Dq-vnR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="6b8-zk-QcU"/>
                 <constraint firstItem="kgA-Ck-H3z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C8W-F1-dRo"/>
+                <constraint firstItem="cHk-Dq-vnR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="H3A-hU-dK8"/>
                 <constraint firstAttribute="trailing" secondItem="kgA-Ck-H3z" secondAttribute="trailing" id="Oqs-hN-M38"/>
-                <constraint firstAttribute="bottom" secondItem="cHk-Dq-vnR" secondAttribute="bottom" constant="20" id="aOd-rw-9e9"/>
+                <constraint firstAttribute="bottom" secondItem="cHk-Dq-vnR" secondAttribute="bottom" constant="15" id="ckC-Od-xTg"/>
                 <constraint firstAttribute="bottom" secondItem="kgA-Ck-H3z" secondAttribute="bottom" id="d3j-iI-a64"/>
-                <constraint firstAttribute="trailing" secondItem="cHk-Dq-vnR" secondAttribute="trailing" constant="20" id="fBY-dR-nf4"/>
-                <constraint firstItem="cHk-Dq-vnR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="fCG-ag-lKM"/>
                 <constraint firstItem="kgA-Ck-H3z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="htF-iZ-nEt"/>
+                <constraint firstAttribute="trailing" secondItem="cHk-Dq-vnR" secondAttribute="trailing" constant="15" id="to7-2t-hHo"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-202" y="-150"/>
