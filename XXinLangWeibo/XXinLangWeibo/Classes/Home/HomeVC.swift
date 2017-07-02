@@ -10,9 +10,17 @@ import UIKit
 
 class HomeVC: BaseViewController {
 
-    // MARK: - 懒加载属性
+    // MARK:- 属性
     
+    
+    // MARK: - 懒加载属性
     lazy var titleBtn : UIButton = TitleButton()
+    // 注意:在闭包中如果使用当前的对象的属性或者调用方法, 也需要加self
+    // 两个地方需要使用self : 1> 如果在一个函数中出现奇异 2> 在闭包中使用当前对象属性或方法
+    lazy var popoverAnimator : PopoverAnimator = PopoverAnimator {[weak self] (presented) in
+        
+        self?.titleBtn.isSelected = presented
+    }
     
     
     // MARK: - 系统回调
@@ -27,7 +35,6 @@ class HomeVC: BaseViewController {
         // 2.设置导航栏内容
         setupNavBar()
     }
-
 }
 
 
@@ -58,34 +65,18 @@ extension HomeVC {
 extension HomeVC {
     
     func titleBtClick(titleBtn : TitleButton) {
-        // 1. 改变按钮状态
-        titleBtn.isSelected = !titleBtn.isSelected
-        
-        // 2. 创建弹出控制器
+        // 1. 创建弹出控制器
         let popoverVc = PopoverVC()
         
-        // 3. 设置控制器model样式
+        // 2. 设置控制器model样式
         popoverVc.modalPresentationStyle = .custom
         
-        // 4. 设置转场代理
-        popoverVc.transitioningDelegate = self
-        
-        // 弹出控制器
+        // 3. 设置转场代理
+        popoverVc.transitioningDelegate = popoverAnimator
+        popoverAnimator.popoverFrame = CGRect(x: (self.view.frame.size.width-180)/2, y: 55, width: 180, height: 250)
+        // 4. 弹出控制器
         present(popoverVc, animated: true, completion: nil)
         
-        
     }
-    
-    
-    
 }
 
-extension HomeVC : UIViewControllerTransitioningDelegate {
-    
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        
-        return XLPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-    
-    
-}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */; };
 		AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF3F1EA342700019227F /* BaseViewController.swift */; };
 		AAFEEF421EA347240019227F /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF411EA347240019227F /* VisiterView.swift */; };
 		AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFEEF431EA3474C0019227F /* VisiterView.xib */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		AAFEEF3F1EA342700019227F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AAFEEF411EA347240019227F /* VisiterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		AAFEEF431EA3474C0019227F /* VisiterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */,
 				BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */,
 				BE9E77BF1F04AAB40033DEFE /* XLPresentationController.swift */,
+				AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */,
 			);
 			path = UIPopover;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */,
 				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
 				AAFEEF421EA347240019227F /* VisiterView.swift in Sources */,
+				AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */,
 				BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */,
 				AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */,
 				BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */,
