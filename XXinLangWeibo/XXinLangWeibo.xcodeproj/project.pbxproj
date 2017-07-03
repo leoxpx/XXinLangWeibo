@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D91EC4EA3CBC99AA46414C7 /* Pods_XXinLangWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD76007E11F6C0EEFEC3FF1F /* Pods_XXinLangWeibo.framework */; };
 		AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */; };
 		AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF3F1EA342700019227F /* BaseViewController.swift */; };
 		AAFEEF421EA347240019227F /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF411EA347240019227F /* VisiterView.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157BF70708648DACFBDF107C /* Pods-XXinLangWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXinLangWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		8A6905D4B9B0354565DCC036 /* Pods-XXinLangWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXinLangWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		AAFEEF3F1EA342700019227F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AAFEEF411EA347240019227F /* VisiterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		BE7DE4021E83F82D00262B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7DE4041E83F82D00262B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9E77BF1F04AAB40033DEFE /* XLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLPresentationController.swift; sourceTree = "<group>"; };
+		CD76007E11F6C0EEFEC3FF1F /* Pods_XXinLangWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXinLangWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D91EC4EA3CBC99AA46414C7 /* Pods_XXinLangWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47597EC2E86C3CBB3474F124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD76007E11F6C0EEFEC3FF1F /* Pods_XXinLangWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAFEEF3E1EA342250019227F /* Visiter */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +200,8 @@
 			children = (
 				BE7DE3F71E83F82D00262B6C /* XXinLangWeibo */,
 				BE7DE3F61E83F82D00262B6C /* Products */,
+				D8C583C2CF8DCA6FFA25AD16 /* Pods */,
+				47597EC2E86C3CBB3474F124 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +227,15 @@
 			path = XXinLangWeibo;
 			sourceTree = "<group>";
 		};
+		D8C583C2CF8DCA6FFA25AD16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6905D4B9B0354565DCC036 /* Pods-XXinLangWeibo.debug.xcconfig */,
+				157BF70708648DACFBDF107C /* Pods-XXinLangWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7DE4071E83F82D00262B6C /* Build configuration list for PBXNativeTarget "XXinLangWeibo" */;
 			buildPhases = (
+				E250951563A6A80E7A6D5BC2 /* [CP] Check Pods Manifest.lock */,
 				BE7DE3F11E83F82D00262B6C /* Sources */,
 				BE7DE3F21E83F82D00262B6C /* Frameworks */,
 				BE7DE3F31E83F82D00262B6C /* Resources */,
+				21488D2A133049DAC8FA4C62 /* [CP] Embed Pods Frameworks */,
+				96B0B59A53D44D3291CAA980 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +314,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21488D2A133049DAC8FA4C62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B0B59A53D44D3291CAA980 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E250951563A6A80E7A6D5BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE7DE3F11E83F82D00262B6C /* Sources */ = {
@@ -455,6 +530,7 @@
 		};
 		BE7DE4081E83F82D00262B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6905D4B9B0354565DCC036 /* Pods-XXinLangWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -470,6 +546,7 @@
 		};
 		BE7DE4091E83F82D00262B6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157BF70708648DACFBDF107C /* Pods-XXinLangWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class VisiterView: UIView {
 // MARK:- 提供快速通过XIB创建的类方法
@@ -35,7 +36,7 @@ class VisiterView: UIView {
         
         // 2.设置属性
         rotationAnim.fromValue = 0
-        rotationAnim.toValue = M_PI * 2
+        rotationAnim.toValue = Double.pi * 2
         rotationAnim.repeatCount = MAXFLOAT
         rotationAnim.duration = 10
         rotationAnim.isRemovedOnCompletion = false

@@ -41,7 +41,6 @@ extension XLPresentationController {
         // 3. 监听点击事件
         let tap = UITapGestureRecognizer(target: self, action: #selector(coverViewClick))
         coverView.addGestureRecognizer(tap)
-        
     }
 }
 
