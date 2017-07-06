@@ -21,11 +21,8 @@ class BaseViewController: UITableViewController {
         isLogin ? super.loadView() : setupViesitor()
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupNavItems()
     }
 }
@@ -39,28 +36,28 @@ extension BaseViewController {
         // 监听访客试图注册登录点击
         visiterView.registerBtn.addTarget(self, action: #selector(registerBtnClick), for: .touchUpInside)
         visiterView.loginBtn.addTarget(self, action: #selector(loginBtnClick), for: .touchUpInside)
-
     }
     
     // 设置导航栏左右item
     func setupNavItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(registerBtnClick))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(loginBtnClick))
-        
     }
-    
-    
-    
-
 }
 
-// MARK:- 事件监听
 extension BaseViewController {
     
     func registerBtnClick() {
         print("registerBtnClick")
     }
     func loginBtnClick() {
-        print("loginBtnClick")
+        // 创建授权控制器
+        let oauth = OAuthVC()
+        
+        // 2. 包装导航控制器
+        let oauthNav = UINavigationController(rootViewController: oauth)
+        
+        // 3. 弹出控制器
+        present(oauthNav, animated: true, completion: nil)
     }
 }

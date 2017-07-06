@@ -19,6 +19,11 @@
 		BE01CBED1E8CE8970055A533 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CBEB1E8CE8970055A533 /* News.storyboard */; };
 		BE01CBEF1E8CF5790055A533 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CBEE1E8CF5790055A533 /* Profile.storyboard */; };
 		BE01CBF31E8CF6820055A533 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBF21E8CF6820055A533 /* UIButton-Extension.swift */; };
+		BE0FDCF41F0C998600AB6EF8 /* OAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FDCF21F0C998600AB6EF8 /* OAuthVC.swift */; };
+		BE0FDCF51F0C998600AB6EF8 /* OAuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0FDCF31F0C998600AB6EF8 /* OAuthVC.xib */; };
+		BE0FDCF71F0CC1FD00AB6EF8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FDCF61F0CC1FD00AB6EF8 /* Common.swift */; };
+		BE0FDCF91F0CCCE200AB6EF8 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FDCF81F0CCCE200AB6EF8 /* NetworkTools.swift */; };
+		BE0FDCFB1F0CD7C000AB6EF8 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FDCFA1F0CD7C000AB6EF8 /* UserAccount.swift */; };
 		BE5647A21E88BE9C0089284C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A11E88BE9C0089284C /* MainVC.swift */; };
 		BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A31E88C21F0089284C /* HomeVC.swift */; };
 		BE5647A61E88C2460089284C /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5647A51E88C2460089284C /* MessageVC.swift */; };
@@ -49,6 +54,11 @@
 		BE01CBEC1E8CE8970055A533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/News.storyboard; sourceTree = "<group>"; };
 		BE01CBEE1E8CF5790055A533 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BE01CBF21E8CF6820055A533 /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		BE0FDCF21F0C998600AB6EF8 /* OAuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthVC.swift; sourceTree = "<group>"; };
+		BE0FDCF31F0C998600AB6EF8 /* OAuthVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthVC.xib; sourceTree = "<group>"; };
+		BE0FDCF61F0CC1FD00AB6EF8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BE0FDCF81F0CCCE200AB6EF8 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		BE0FDCFA1F0CD7C000AB6EF8 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		BE5647A11E88BE9C0089284C /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BE5647A31E88C21F0089284C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BE5647A51E88C2460089284C /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
@@ -103,6 +113,8 @@
 			children = (
 				BE01CBF11E8CF6240055A533 /* Category */,
 				BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */,
+				BE0FDCF61F0CC1FD00AB6EF8 /* Common.swift */,
+				BE0FDCF81F0CCCE200AB6EF8 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -114,6 +126,16 @@
 				AAFEEF451EA39B7D0019227F /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		BE0FDCF11F0C996200AB6EF8 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				BE0FDCF21F0C998600AB6EF8 /* OAuthVC.swift */,
+				BE0FDCFA1F0CD7C000AB6EF8 /* UserAccount.swift */,
+				BE0FDCF31F0C998600AB6EF8 /* OAuthVC.xib */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		BE56479B1E88BDE80089284C /* Classes */ = {
@@ -151,6 +173,7 @@
 		BE56479E1E88BDE80089284C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BE0FDCF11F0C996200AB6EF8 /* OAuth */,
 				AAFEEF3E1EA342250019227F /* Visiter */,
 				BE5647AB1E8909630089284C /* Resource */,
 				BE5647A11E88BE9C0089284C /* MainVC.swift */,
@@ -305,6 +328,7 @@
 				BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */,
 				BE01CBED1E8CE8970055A533 /* News.storyboard in Resources */,
 				AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */,
+				BE0FDCF51F0C998600AB6EF8 /* OAuthVC.xib in Resources */,
 				BE56E8E81F03B55C00D40FC7 /* PopoverVC.xib in Resources */,
 				BE5647AD1E8909630089284C /* MainVCSettings.json in Resources */,
 				BE01CBE21E8CE4130055A533 /* Message.storyboard in Resources */,
@@ -368,6 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0FDCF71F0CC1FD00AB6EF8 /* Common.swift in Sources */,
+				BE0FDCF91F0CCCE200AB6EF8 /* NetworkTools.swift in Sources */,
+				BE0FDCFB1F0CD7C000AB6EF8 /* UserAccount.swift in Sources */,
 				BE9E77C01F04AAB40033DEFE /* XLPresentationController.swift in Sources */,
 				AAFEEF461EA39B7D0019227F /* UIBarButtonItem-Extension.swift in Sources */,
 				BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */,
@@ -375,6 +402,7 @@
 				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,
 				BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */,
 				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
+				BE0FDCF41F0C998600AB6EF8 /* OAuthVC.swift in Sources */,
 				AAFEEF421EA347240019227F /* VisiterView.swift in Sources */,
 				AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */,
 				BE5647A41E88C21F0089284C /* HomeVC.swift in Sources */,
@@ -532,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A6905D4B9B0354565DCC036 /* Pods-XXinLangWeibo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L37SXG465L;
@@ -548,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 157BF70708648DACFBDF107C /* Pods-XXinLangWeibo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = L37SXG465L;
