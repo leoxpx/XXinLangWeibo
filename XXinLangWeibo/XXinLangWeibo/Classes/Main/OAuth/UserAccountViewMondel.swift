@@ -8,8 +8,11 @@
 
 import UIKit
 
-class UserAccountTool {
+class UserAccountViewModel {
 
+    // MARK:- 将类设计成单利
+    static let shareIntance : UserAccountViewModel = UserAccountViewModel()
+    
     // MARK:- 定义属性
     var account : UserAccount?
     
@@ -20,20 +23,19 @@ class UserAccountTool {
         return (accountPath as NSString).appending("account.plist")
     }
     
-    // MARK:- 重写init()函数
-    init() {
-        // 1. 从沙河中读取归档信息
-        account = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
-        
-        
-    }
-    
-    func isLogin() -> Bool {
+    var isLogin: Bool {
         if account == nil {
             return false
         }
         guard let expireData = account?.expires_date else {
             return false
         }
+        return expireData.compare(NSDate() as Date) == ComparisonResult.orderedDescending
+    }
+    
+    // MARK:- 重写init()函数
+    init() {
+        // 1. 从沙河中读取归档信息
+        account = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
     }
 }
