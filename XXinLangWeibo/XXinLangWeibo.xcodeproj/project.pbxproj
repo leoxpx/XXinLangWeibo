@@ -33,6 +33,7 @@
 		BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */; };
 		BE56E8E71F03B55C00D40FC7 /* PopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */; };
 		BE56E8E81F03B55C00D40FC7 /* PopoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */; };
+		BE5ECDDF1F1381BF0022DC88 /* UserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5ECDDE1F1381BF0022DC88 /* UserAccountTool.swift */; };
 		BE7DE3F91E83F82D00262B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */; };
 		BE7DE3FE1E83F82D00262B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FC1E83F82D00262B6C /* Main.storyboard */; };
 		BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7DE3FF1E83F82D00262B6C /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		BE56E8E01F03AE8800D40FC7 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		BE56E8E51F03B55C00D40FC7 /* PopoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverVC.swift; sourceTree = "<group>"; };
 		BE56E8E61F03B55C00D40FC7 /* PopoverVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverVC.xib; sourceTree = "<group>"; };
+		BE5ECDDE1F1381BF0022DC88 /* UserAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTool.swift; sourceTree = "<group>"; };
 		BE7DE3F51E83F82D00262B6C /* XXinLangWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXinLangWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7DE3F81E83F82D00262B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7DE3FD1E83F82D00262B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				BE0FDCF21F0C998600AB6EF8 /* OAuthVC.swift */,
 				BE0FDCFA1F0CD7C000AB6EF8 /* UserAccount.swift */,
 				BE0FDCF31F0C998600AB6EF8 /* OAuthVC.xib */,
+				BE5ECDDE1F1381BF0022DC88 /* UserAccountTool.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				BE0FDCFB1F0CD7C000AB6EF8 /* UserAccount.swift in Sources */,
 				BE9E77C01F04AAB40033DEFE /* XLPresentationController.swift in Sources */,
 				AAFEEF461EA39B7D0019227F /* UIBarButtonItem-Extension.swift in Sources */,
+				BE5ECDDF1F1381BF0022DC88 /* UserAccountTool.swift in Sources */,
 				BE5647AA1E88C2790089284C /* ProfileVC.swift in Sources */,
 				BE01CBF31E8CF6820055A533 /* UIButton-Extension.swift in Sources */,
 				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,

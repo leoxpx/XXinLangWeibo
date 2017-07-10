@@ -180,7 +180,15 @@ extension OAuthVC {
             account.screen_name = userInfoDict["screen_name"] as? String
             account.avatar_large = userInfoDict["avatar_large"] as? String
             
-            print(account)
+            // 4. 将account对象保存
+            // 4.1 偶去沙河路径
+            var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            accountPath = (accountPath as NSString).appending("account.plist")
+            
+            print(accountPath)
+            // 4.2 保存对象
+            NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            
         }
     }
 }

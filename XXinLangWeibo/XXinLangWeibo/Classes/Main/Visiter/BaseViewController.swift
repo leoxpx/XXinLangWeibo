@@ -18,6 +18,21 @@ class BaseViewController: UITableViewController {
     
     // MARK:- 系统回调函数
     override func loadView() {
+        
+        // 1. 从沙河中读取归档信息
+        // 1.1 获取沙河路径
+        var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        accountPath = (accountPath as NSString).appending("account.plist")
+        // 1.2 读取信息
+        let account = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
+        if let account = account {
+            // 1.3 取出过期日期
+           if let expireData = account.expires_date {
+               isLogin = expireData.compare(NSDate() as Date) == ComparisonResult.orderedDescending
+            }
+        }
+        
+        // 判断加载哪一个View
         isLogin ? super.loadView() : setupViesitor()
     }
     
