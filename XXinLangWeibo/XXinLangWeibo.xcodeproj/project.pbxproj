@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7D91EC4EA3CBC99AA46414C7 /* Pods_XXinLangWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD76007E11F6C0EEFEC3FF1F /* Pods_XXinLangWeibo.framework */; };
 		AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */; };
+		AA0E1CE61F166C5E003A3398 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E1CE41F166C5E003A3398 /* WelcomeVC.swift */; };
+		AA0E1CE71F166C5E003A3398 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */; };
 		AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF3F1EA342700019227F /* BaseViewController.swift */; };
 		AAFEEF421EA347240019227F /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF411EA347240019227F /* VisiterView.swift */; };
 		AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFEEF431EA3474C0019227F /* VisiterView.xib */; };
@@ -45,6 +47,8 @@
 		157BF70708648DACFBDF107C /* Pods-XXinLangWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXinLangWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		8A6905D4B9B0354565DCC036 /* Pods-XXinLangWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXinLangWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXinLangWeibo/Pods-XXinLangWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		AA0E1CE41F166C5E003A3398 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
 		AAFEEF3F1EA342700019227F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AAFEEF411EA347240019227F /* VisiterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		AAFEEF431EA3474C0019227F /* VisiterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 				CD76007E11F6C0EEFEC3FF1F /* Pods_XXinLangWeibo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0E1CE31F166C06003A3398 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E1CE41F166C5E003A3398 /* WelcomeVC.swift */,
+				AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		AAFEEF3E1EA342250019227F /* Visiter */ = {
@@ -176,6 +189,7 @@
 		BE56479E1E88BDE80089284C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AA0E1CE31F166C06003A3398 /* Welcome */,
 				BE0FDCF11F0C996200AB6EF8 /* OAuth */,
 				AAFEEF3E1EA342250019227F /* Visiter */,
 				BE5647AB1E8909630089284C /* Resource */,
@@ -327,6 +341,7 @@
 			files = (
 				BE7DE4031E83F82D00262B6C /* LaunchScreen.storyboard in Resources */,
 				BE01CBDC1E8CE3780055A533 /* Home.storyboard in Resources */,
+				AA0E1CE71F166C5E003A3398 /* WelcomeVC.xib in Resources */,
 				BE01CBEF1E8CF5790055A533 /* Profile.storyboard in Resources */,
 				BE7DE4001E83F82D00262B6C /* Assets.xcassets in Resources */,
 				BE01CBED1E8CE8970055A533 /* News.storyboard in Resources */,
@@ -406,6 +421,7 @@
 				BE5647A61E88C2460089284C /* MessageVC.swift in Sources */,
 				BE56E8E11F03AE8800D40FC7 /* TitleButton.swift in Sources */,
 				BE5647A81E88C2560089284C /* DiscoverVC.swift in Sources */,
+				AA0E1CE61F166C5E003A3398 /* WelcomeVC.swift in Sources */,
 				BE0FDCF41F0C998600AB6EF8 /* OAuthVC.swift in Sources */,
 				AAFEEF421EA347240019227F /* VisiterView.swift in Sources */,
 				AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */,

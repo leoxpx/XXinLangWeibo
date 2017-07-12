@@ -189,6 +189,17 @@ extension OAuthVC {
             // 4.2 保存对象
             NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
             
+            // 5.将account对象设置到单利对象中
+            
+            
+            // 5. 显示欢迎界面
+            
+            
+            // 6.退出当前控制器
+            self.dismiss(animated: false, completion: {
+                UIApplication.shared.keyWindow?.rootViewController = WelcomeVC()
+                
+            })
         }
     }
 }
