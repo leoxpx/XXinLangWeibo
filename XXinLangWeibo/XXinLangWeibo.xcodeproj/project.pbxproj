@@ -11,6 +11,7 @@
 		AA0AF87F1F08FFD9001D9CC1 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */; };
 		AA0E1CE61F166C5E003A3398 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E1CE41F166C5E003A3398 /* WelcomeVC.swift */; };
 		AA0E1CE71F166C5E003A3398 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */; };
+		AA4354471F1D042200CD3843 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4354461F1D042200CD3843 /* Status.swift */; };
 		AAFEEF401EA342700019227F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF3F1EA342700019227F /* BaseViewController.swift */; };
 		AAFEEF421EA347240019227F /* VisiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEEF411EA347240019227F /* VisiterView.swift */; };
 		AAFEEF441EA3474C0019227F /* VisiterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFEEF431EA3474C0019227F /* VisiterView.xib */; };
@@ -49,6 +50,7 @@
 		AA0AF87E1F08FFD9001D9CC1 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		AA0E1CE41F166C5E003A3398 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
+		AA4354461F1D042200CD3843 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		AAFEEF3F1EA342700019227F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AAFEEF411EA347240019227F /* VisiterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiterView.swift; sourceTree = "<group>"; };
 		AAFEEF431EA3474C0019227F /* VisiterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisiterView.xib; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 				AA0E1CE51F166C5E003A3398 /* WelcomeVC.xib */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		AA4354451F1D03E700CD3843 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA4354461F1D042200CD3843 /* Status.swift */,
+			);
+			path = HomeModel;
 			sourceTree = "<group>";
 		};
 		AAFEEF3E1EA342250019227F /* Visiter */ = {
@@ -180,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BE56E8E21F03B50700D40FC7 /* UIPopover */,
+				AA4354451F1D03E700CD3843 /* HomeModel */,
 				BE5647A31E88C21F0089284C /* HomeVC.swift */,
 				BE01CBDA1E8CE3780055A533 /* Home.storyboard */,
 			);
@@ -412,6 +423,7 @@
 			files = (
 				BE0FDCF71F0CC1FD00AB6EF8 /* Common.swift in Sources */,
 				BE0FDCF91F0CCCE200AB6EF8 /* NetworkTools.swift in Sources */,
+				AA4354471F1D042200CD3843 /* Status.swift in Sources */,
 				BE0FDCFB1F0CD7C000AB6EF8 /* UserAccount.swift in Sources */,
 				BE9E77C01F04AAB40033DEFE /* XLPresentationController.swift in Sources */,
 				AAFEEF461EA39B7D0019227F /* UIBarButtonItem-Extension.swift in Sources */,

@@ -29,7 +29,7 @@ class WelcomeVC: UIViewController {
         // 2. 执行动画
         // Damping: 阻尼系数,主力系数越大,弹动的效果越不明显 0-1
         // initialSpringVelocity: 初始化速度
-        UIView.animate(withDuration: 5.5, delay: 0.0, usingSpringWithDamping: 0.17, initialSpringVelocity: 3.0, options:[], animations: {
+        UIView.animate(withDuration: 1.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5.0, options:.allowUserInteraction, animations: {
             
             self.view.layoutIfNeeded()
         }) { (_) in
@@ -38,3 +38,4 @@ class WelcomeVC: UIViewController {
         }
     }
 }
+
